@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tiempo</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'calibri';
+        list-style: none;
+    }
+    body{
+        background-color:#fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background: url(download2.jpg);
+        background-position: fixed;
+        background-size: 100% 100%;
+    }
+    .navbar{
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid rgba(255,255,255,.2);
+        border-radius: 30px;
+        padding: 10px;
+        
+        
+    }
+
+    .navbar .name {
+        font-size: 40px;
+        margin: 0 0 0 60px;
+        color: black;
+    }
+    .navbar a{
+        color: black;
+        transition: 0.3s;
+        padding: 10px 10px 10px 10px;
+    }
+    .navbar a:hover{
+        background-color: transparent;
+        color: white ;
+    }
+
+    #intro {
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .picture img {
+        height: 300px;
+        width: auto;
+        border: 1px solid rgba(255,255,255,.2);
+        border-radius: 30px;
+    }
+
+    #intro .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        
+    }
+    .social_icons{
+        display: flex;
+        align-self: end;
+    }
+    #skill{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        gap: 1rem;
+        width: 80%;
+        margin: 10px;
+        border: 2px solid rgba(255,255,255,.2);
+        border-radius: 20px;
+        background-color: rgba(255,255,255,.2);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+    }
+    #skill h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: black;
+    }
+    .cpro{
+          width: 100%;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: white;
+        color: #fff;
+        padding: 0px 70px 0px 0px;
+        
+    }
+  
+    #skill .c{
+        width: 50%;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: black;
+        color: #fff;
+        padding: 0px 70px 0px 10px;
+        transition: 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+        animation: c 5s;
+        
+    } 
+    .htm{
+          width: 100%;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: white;
+        color: #fff;
+        padding: 0px 70px 0px 0px;
+        
+    }
+      #skill .html{
+        width: 40%;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        padding: 0px 40px 0px 10px;
+        transition: 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+        animation: html 5s;
+    } 
+       .cs{
+          width: 100%;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: white;
+        color: #fff;
+        padding: 0px 70px 0px 0px;
+        
+    }
+      #skill .css{
+        width: 30%;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: black;
+        color: #fff;
+        padding: 0px 30px 0px 10px;
+        transition: 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+        animation: css 5s;
+    } 
+       .j{
+          width: 100%;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: white;
+        color: #fff;
+        padding: 0px 70px 0px 0px;
+        
+    }
+      #skill .js{
+        width: 10%;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        padding: 0px 10px 0px 10px;
+        transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+        animation: js 5s;
+    } 
+    .nxtpage {
+        display: flex;
+        justify-content: center;
+        align-self: end;
+        border: 2px solid rgba(255,255,255,.2);
+        border-radius: 30px;
+        padding: 10px 0 10px 0;
+        margin: 40px;
+        width: 10%;
+        background-color: black;
+        color: white;
+       
+    }
+    .nxtpage:hover{
+        background-color: white;
+        color: black;
+    }
+    @keyframes c{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:50%;
+        }
+    }@keyframes html{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:40%;
+        }
+    }@keyframes css{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:30%;
+        }
+    }
+    @keyframes js{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:10%;
+        }
+    }
+    @media (max-width:600px) {
+        
+    }
+   
+</style>
+</head>
+<body>
+        <nav class="navbar">
+            <div class="name">
+                <h1>PORTFOLIO </h1>
+            </div>
+            <div>
+            <a>HOME </a>
+            <a>ABOUT </a>
+            <a>EXPERIENCE  </a>
+            <a>EDUCATION </a>
+            <a>CONTACT  </a>
+            </div>
+        </nav>
+                <div  id="intro">
+                    <div class="picture">
+                        <a><img src="jktiempo.jpg" alt=""></a>
+                    </div>
+                    <div class="content">
+                    <div class="introduction">
+                        <h1>Jhon Keth Tiempo</h1>
+                        <br><h2>An Aspiring Programmer and  Web Developer</h2></br>
+                        <p>
+                            <p>In terms of programming, I am quite knowleadgeable in C/C++,a little </p>
+                            <p>bit of HTML and CSS. While in javascript, I don't have a lot of knowledge</p>
+                            <p> of it for now but I'm in the process of learning new things that can be </p>
+                            <p> beneficial in the near future.</p>
+                           
+                        </p>
+                    </div>
+                    <div class="social_icons">
+                            <img src="facebook.png">
+                            <img src="twitter.png">
+                            <img src="instagram.png">
+                            <img src="youtube.png">
+                            
+                    </div>
+                    </div>
+                </div>
+                
+                 <div id="skill">
+                    <h3>My Skills</h3>
+                    <div class="cpro">
+                         <li class="c">
+                        C/C++</li>
+                    </div>
+                   <div class="htm">
+                    <li class="html">HTML</li>
+                   </div>
+                     <div class="cs">
+                        <li class="css">CSS</li>
+                     </div>    
+                     <div class="j">
+                        <li class="js">JS</li>
+                     </div>
+                    
+                    </div>
+                 </div>
+                 
+                 <div class="nxtpage">
+                    NEXT PAGE
+                 </div>
+</body>
+</html>
